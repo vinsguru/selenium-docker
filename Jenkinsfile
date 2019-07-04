@@ -22,7 +22,7 @@ pipeline {
         stage('Push Image') {
             steps {
                 script {
-			       app.push("latest")
+			app.push("latest")
                 }
             }
         }
