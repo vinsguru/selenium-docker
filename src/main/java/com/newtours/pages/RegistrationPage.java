@@ -37,7 +37,7 @@ public class RegistrationPage {
     }
 
     public void goTo(){
-        this.driver.get("http://newtours.demoaut.com/mercuryregister.php");
+        this.driver.get("https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html");
         this.wait.until(ExpectedConditions.visibilityOf(this.firstNameTxt));
     }
 
