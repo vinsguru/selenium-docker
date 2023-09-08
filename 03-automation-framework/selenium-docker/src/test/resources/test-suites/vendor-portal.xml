@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="vendor-portal">
+    <test name="user-sam">
+        <parameter name="testDataPath" value="test-data/vendor-portal/sam.json" />
+        <classes>
+            <class name="com.vinsguru.tests.vendorportal.VendorPortalTest"/>
+        </classes>
+    </test>
+    <test name="user-mike">
+        <parameter name="testDataPath" value="test-data/vendor-portal/mike.json" />
+        <classes>
+            <class name="com.vinsguru.tests.vendorportal.VendorPortalTest"/>
+        </classes>
+    </test>
+    <test name="user-john">
+        <parameter name="testDataPath" value="test-data/vendor-portal/john.json" />
+        <classes>
+            <class name="com.vinsguru.tests.vendorportal.VendorPortalTest"/>
+        </classes>
+    </test>
+</suite>

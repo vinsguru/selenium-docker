@@ -1,0 +1,7 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+
+# docker-compose -f nginx.yaml up
+# docker-compose -f nginx.yaml down

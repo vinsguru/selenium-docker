@@ -1,0 +1,8 @@
+version: "3"
+services:
+  alpine:
+    image: alpine
+    entrypoint: "ping nginx"
+
+# docker-compose -f alpine.yaml up
+# docker-compose -f alpine.yaml down
