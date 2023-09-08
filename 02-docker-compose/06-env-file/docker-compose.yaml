@@ -1,0 +1,11 @@
+# vinsdocker/sel-app:v1
+# vinsdocker/sel-app:v2
+# vinsdocker/sel-app:v3
+# 80
+
+version: "3"
+services:
+  demo:
+    image: vinsdocker/sel-app:${VERSION}
+    ports:
+    - 80:80

@@ -1,0 +1,47 @@
+# https://github.com/SeleniumHQ/docker-selenium#experimental-mult-arch-aarch64armhfamd64-images
+version: "3"
+services:
+  hub:
+    image: seleniarm/hub:4.10
+    ports:
+      - "4444:4444"
+  chrome:
+    image: seleniarm/node-chromium:4.10
+    shm_size: '2g'        
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  firefox:
+    image: seleniarm/node-firefox:4.10
+    shm_size: '2g'   
+    depends_on:
+      - hub
+    environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+  # search-module:
+  #   image: vinsdocker/selenium-docker-bdd
+  #   depends_on:
+  #     - chrome
+  #     - firefox
+  #   environment:
+  #     - HUB_HOST=hub
+  #     - BROWSER=firefox
+  #     - TAGS=@search
+  #   volumes:
+  #     - ./output/search-result:/usr/share/udemy/test-output      
+  # book-flight-module:
+  #   image: vinsdocker/selenium-docker-bdd
+  #   depends_on:
+  #     - chrome
+  #     - firefox
+  #   environment:
+  #     - HUB_HOST=hub
+  #     - BROWSER=chrome
+  #     - TAGS=@book-flight
+  #   volumes:
+  #     - ./output/book-result:/usr/share/udemy/test-output   

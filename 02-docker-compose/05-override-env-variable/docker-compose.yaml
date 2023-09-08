@@ -1,0 +1,11 @@
+version: "3"
+services:
+  squares:
+    image: vinsdocker/squares
+    environment:
+    #- NUMBER=${NUM}
+    #- NUMBER=${NUM:-7}
+    - NUMBER
+
+
+# NUM=3 docker-compose up

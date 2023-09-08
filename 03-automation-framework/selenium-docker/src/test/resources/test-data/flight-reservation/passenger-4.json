@@ -1,0 +1,11 @@
+{
+  "firstName": "dr",
+  "lastName": "dre",
+  "email": "dr@dre.com",
+  "password": "dre",
+  "street": "455 main street",
+  "city": "detroit",
+  "zip": "40001",
+  "passengersCount": "4",
+  "expectedPrice": "$2338 USD"
+}

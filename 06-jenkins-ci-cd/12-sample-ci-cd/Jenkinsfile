@@ -1,0 +1,40 @@
+pipeline{
+
+    agent any
+
+    stages{
+
+        stage('mvn-test'){
+            steps{
+                echo "running unit tests"
+                echo "running integrations tests"
+            }
+        }
+
+        stage('package'){
+            steps{
+                echo "build application docker image (flight-reservation app)"
+            }
+        } 
+
+        stage('deploy-to-qa'){
+            steps{
+                echo "deploying flight-reservation app to QA env"
+            }
+        } 
+
+        stage('selenium-test'){
+            steps{
+               build job: 'SELENIUM_DOCKER_RUNNER', parameters: [string(name: 'BROWSER', value: 'firefox')]
+            }
+        } 
+
+        stage('deploy-to-prod'){
+            steps{
+               echo "deploying flight-reservation app to PROD env"
+            }
+        } 
+
+    }
+
+}
