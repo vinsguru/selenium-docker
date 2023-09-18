@@ -1,0 +1,21 @@
+<!-- http://dev.cs.ovgu.de/java/logback/manual/layouts.html -->
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%15.15t] %cyan(%-30.30logger{30}) : %m%n</pattern>
+        </encoder>
+    </appender>
+<!--    <appender name="FILE" class="ch.qos.logback.core.FileAppender">-->
+<!--        <file>test.log</file>-->
+<!--        <append>true</append>-->
+<!--        &lt;!&ndash; set immediateFlush to false for much higher logging throughput &ndash;&gt;-->
+<!--        <immediateFlush>true</immediateFlush>-->
+<!--        <encoder>-->
+<!--            <pattern>%-4relative [%thread] %-5level %logger{35} -%kvp- %msg%n</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+    <logger name="org.asynchttpclient.netty.handler.WebSocketHandler" level="OFF"/>
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
