@@ -9,7 +9,7 @@
 
 If you see "arm", then use ARM images.
 
-Use this docker images for creating selenium grid
+Use this docker images for creating selenium grid. There are some know issues with latest version. So DO NOT use those.
 
 | Image      | ARM | Others     |
 | :---        |    :----:   |          ---: |
