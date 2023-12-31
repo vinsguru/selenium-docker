@@ -13,9 +13,9 @@ Use this docker images for creating selenium grid. There are some know issues wi
 
 | Image      | ARM | Others     |
 | :---        |    :----:   |          ---: |
-| Hub      | seleniarm/hub:4.10       | selenium/hub:4.10   |
-| Chrome      | seleniarm/node-chromium:4.10       | selenium/node-chrome:4.10   |
-| Firefox      | seleniarm/node-firefox:4.10       | selenium/node-firefox:4.10   |
+| Hub      | seleniarm/hub:4.16       | selenium/hub:4.16   |
+| Chrome      | seleniarm/node-chromium:4.16       | selenium/node-chrome:4.16   |
+| Firefox      | seleniarm/node-firefox:4.16       | selenium/node-firefox:4.16   |
 
 ## References:
 

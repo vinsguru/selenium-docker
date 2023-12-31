@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <selenium.java.version>4.11.0</selenium.java.version>
-        <logback.version>1.4.8</logback.version>
-        <webdriver.manager.version>5.4.0</webdriver.manager.version>
-        <testng.version>7.8.0</testng.version>
-        <jackson.version>2.12.0</jackson.version>
+        <selenium.java.version>4.16.0</selenium.java.version>
+        <logback.version>1.4.14</logback.version>
+        <webdriver.manager.version>5.6.3</webdriver.manager.version>
+        <testng.version>7.9.0</testng.version>
+        <jackson.version>2.16.1</jackson.version>
         <!-- plugins versions -->
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <maven.dependency.version>3.6.0</maven.dependency.version>
