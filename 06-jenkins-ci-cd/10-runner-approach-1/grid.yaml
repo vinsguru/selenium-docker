@@ -1,9 +1,9 @@
 version: "3"
 services:
   hub:
-    image: seleniarm/hub:4.16
+    image: seleniarm/hub:4.20
   chrome:
-    image: seleniarm/node-chromium:4.16
+    image: seleniarm/node-chromium:4.20
     shm_size: '2g'
     depends_on:
     - hub
@@ -11,7 +11,7 @@ services:
       replicas: 1
     env_file: .env
   firefox:
-    image: seleniarm/node-firefox:4.16
+    image: seleniarm/node-firefox:4.20
     shm_size: '2g'
     depends_on:
     - hub

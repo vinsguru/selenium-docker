@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <selenium.java.version>4.16.0</selenium.java.version>
-        <logback.version>1.4.14</logback.version>
-        <webdriver.manager.version>5.6.3</webdriver.manager.version>
-        <testng.version>7.9.0</testng.version>
-        <jackson.version>2.16.1</jackson.version>
+        <selenium.java.version>4.23.0</selenium.java.version>
+        <logback.version>1.5.6</logback.version>
+        <webdriver.manager.version>5.9.2</webdriver.manager.version>
+        <testng.version>7.10.2</testng.version>
+        <jackson.version>2.17.2</jackson.version>
         <!-- plugins versions -->
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <maven.dependency.version>3.6.0</maven.dependency.version>
@@ -67,7 +67,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.version}</version>
                 <configuration>
-                    <release>17</release>
+                    <release>21</release>
                 </configuration>
             </plugin>
             <!-- To run the tests using specific parameters, change thread count, testng report output directory etc -->
@@ -78,8 +78,8 @@
                 <configuration>
                     <!-- mvn clean test -Dbrowser=chrome -Dselenium.grid.enabled=true -->
                     <systemPropertyVariables>
-                        <browser>firefox</browser>
-                        <selenium.grid.enabled>true</selenium.grid.enabled>
+                        <browser>chrome</browser>
+                        <selenium.grid.enabled>false</selenium.grid.enabled>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                         <file>src/test/resources/test-suites/vendor-portal.xml</file>

@@ -1,11 +1,11 @@
 version: "3"
 services:
   hub:
-    image: seleniarm/hub:4.16
+    image: seleniarm/hub:4.20
     ports:
     - 4444:4444
   chrome:
-    image: seleniarm/node-chromium:4.16
+    image: seleniarm/node-chromium:4.20
     shm_size: '2g'
     depends_on:
     - hub
@@ -16,7 +16,7 @@ services:
     - SE_NODE_OVERRIDE_MAX_SESSIONS=true
     - SE_NODE_MAX_SESSIONS=4
   firefox:
-    image: seleniarm/node-firefox:4.16
+    image: seleniarm/node-firefox:4.20
     shm_size: '2g'
     depends_on:
     - hub
