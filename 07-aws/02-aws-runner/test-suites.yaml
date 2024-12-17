@@ -1,4 +1,3 @@
-version: "3"
 services:
   vendor-portal:
     image: vinsdocker/selenium

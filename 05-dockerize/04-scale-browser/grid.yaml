@@ -1,9 +1,9 @@
 version: "3"
 services:
   hub:
-    image: seleniarm/hub:4.20
+    image: selenium/hub:4.27
   chrome:
-    image: seleniarm/node-chromium:4.20
+    image: selenium/node-chromium:4.27
     shm_size: '2g'
     depends_on:
     - hub
@@ -16,7 +16,7 @@ services:
     - SE_NODE_OVERRIDE_MAX_SESSIONS=true
     - SE_NODE_MAX_SESSIONS=4
   firefox:
-    image: seleniarm/node-firefox:4.20
+    image: selenium/node-firefox:4.27
     shm_size: '2g'
     depends_on:
     - hub

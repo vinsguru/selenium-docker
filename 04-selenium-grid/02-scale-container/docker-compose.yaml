@@ -1,16 +1,15 @@
 # we can also scale by using this option below
-# docker-compose up --scale chrome 2 --scale firefox 2 -d
+# docker-compose up --scale chrome=2 --scale firefox=2 -d
 
-version: "3"
 services:
   hub:
-    image: seleniarm/hub:4.20
+    image: selenium/hub:4.27
     ports:
     - 4444:4444
     # - 4442:4442
     # - 4443:4443   
   chrome:
-    image: seleniarm/node-chromium:4.20
+    image: selenium/node-chromium:4.27
     shm_size: '2g'
     depends_on:
     - hub
@@ -21,7 +20,7 @@ services:
     - SE_EVENT_BUS_PUBLISH_PORT=4442
     - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
   firefox:
-    image: seleniarm/node-firefox:4.20
+    image: selenium/node-firefox:4.27
     shm_size: '2g'
     depends_on:
     - hub

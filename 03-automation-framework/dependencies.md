@@ -7,11 +7,11 @@
 
 ```
     <properties>
-        <selenium.java.version>4.23.0</selenium.java.version>
-        <logback.version>1.5.6</logback.version>
+        <selenium.java.version>4.27.0</selenium.java.version>
+        <logback.version>1.5.12</logback.version>
         <webdriver.manager.version>5.9.2</webdriver.manager.version>
         <testng.version>7.10.2</testng.version>
-        <jackson.version>2.17.2</jackson.version>
+        <jackson.version>2.18.2</jackson.version>
         <!-- plugins versions -->
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <maven.dependency.version>3.6.0</maven.dependency.version>
@@ -65,7 +65,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.version}</version>
                 <configuration>
-                    <release>17</release>
+                    <release>21</release>
                 </configuration>
             </plugin>
             <!-- To run the tests using specific parameters, change thread count, testng report output directory etc -->
