@@ -1,10 +1,10 @@
 services:
   hub:
-    image: selenium/hub:4.27
+    image: selenium/hub:4.32
     ports:
     - 4444:4444
   chrome:
-    image: selenium/node-chromium:4.27
+    image: selenium/node-chromium:4.32
     shm_size: '1g'
     depends_on:
     - hub
@@ -15,7 +15,7 @@ services:
     - SE_NODE_OVERRIDE_MAX_SESSIONS=true
     - SE_NODE_MAX_SESSIONS=1
   firefox:
-    image: selenium/node-firefox:4.27
+    image: selenium/node-firefox:4.32
     shm_size: '1g'
     depends_on:
     - hub

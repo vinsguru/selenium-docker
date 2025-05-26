@@ -5,9 +5,9 @@ So DO NOT use those. I have tested below versions. I periodically update.
 
 | Image      | Verison | 
 | :---        |    :----:   | 
-| Hub      | selenium/hub:4.27       | 
-| Chrome      | selenium/node-chromium:4.27       | 
-| Firefox      | selenium/node-firefox:4.27       | 
+| Hub      | selenium/hub:4.32       | 
+| Chrome      | selenium/node-chromium:4.32       | 
+| Firefox      | selenium/node-firefox:4.32       | 
 
 `We no longer need seleniarm images for Mac.`
 
